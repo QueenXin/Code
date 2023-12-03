@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国地图 - 人口变化</title>
+    <style>
+        /* Add your styles here */
+        path {
+            stroke: #fff;
+            stroke-width: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>中国地图 - 人口变化</h1>
+    <div>
+        <label for="year">选择年份:</label>
+        <select id="year" onchange="updateMap()"></select>
+        <button onclick="updateMap()">更新地图</button>
+    </div>
+    <div id="map-container"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!--<script src="d3.v7.min.js"></script>-->
+    <script src="china.geojson"></script>
+    <script src="china_population_data.json"></script>
+    <script src="index.js"></script>
+</body>
+</html>
