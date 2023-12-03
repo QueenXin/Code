@@ -35,7 +35,7 @@ d3.json("china.geojson").then(function (china) {
         });
     
     // 创建年份选择框
-    const years = [2021, 2020, 2019]; // 根据实际情况调整年份
+    const years = [2021, 2020, 2019]; 
     d3.select("#year")
         .selectAll("option")
         .data(years)
@@ -61,7 +61,6 @@ function getColor(population) {
 function updateMap() {
     const selectedYear = +d3.select("#year").property("value");
     
-    // 假设数据格式为 { "province1": { "2021": 1000000, "2020": 900000, ... }, "province2": { ... }, ... }
     d3.json(dataUrl).then(function (data) {
         currentPopulationData = data;
 
