@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title>中国大陆人口数据可视化</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <input type="radio" name="yearBtn" id="btn2000" value="2000" checked>
+    <label for="btn2000">2000年</label>
+    <input type="radio" name="yearBtn" id="btn2010" value="2010">
+    <label for="btn2010">2010年</label>
+    <input type="radio" name="yearBtn" id="btn2020" value="2020">
+    <label for="btn2020">2020年</label>
+    <button id="viewDataBtn">查看数据</button>
+    <button id="resetBtn">重置</button>
+
+    <div id="main" style="width: 1400px;height:700px;"></div>
+    <div id="barChart" style="width: 1000px; height: 500px; margin: 20px auto;"></div>
+    <script src="ec.js"></script>
+</body>
+
+</html>
